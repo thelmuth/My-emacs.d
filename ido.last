@@ -1,0 +1,48 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/helmuth/Dropbox/Clojure/Clojush/src/" . "clojush/")
+ ("/Users/helmuth/Dropbox/Clojure/Clojush/" . "src/")
+ ("/Users/helmuth/Dropbox/Clojure/" . "Clojush/")
+ ("/Users/helmuth/Dropbox/" . "Clojure/")
+ ("/Users/helmuth/" . "Dropbox/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/helmuth/.emacs.d/"
+ "/Users/helmuth/Dropbox/Clojure/Clojush/src/clojush/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "util.clj"
+ "args.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/helmuth/.emacs.d/" (22840 19174 0 0) "projectile-bookmarks.eld" "network-security.data" "init.el" "ido.last" "elpa/" "customizations/" "auto-save-list/" ".smex-items" ".recentf" ".DS_Store" "../" "./")
+
+ ("/Users/helmuth/.emacs.d/customizations/" (22840 19348 0 0) "ui.el" "setup-clojure.el" "navigation.el" "helmuth.el" "editing.el" ".DS_Store" "../" "./")
+
+ ("/Users/helmuth/Dropbox/Clojure/Clojush/src/clojush/" (22840 18949 0 0) "util.clj" "translate.clj" "simplification.clj" "random.clj" "pushstate.clj" "pushgp/" "problems/" "ns.clj" "interpreter.clj" "instructions/" "individual.clj" "globals.clj" "experimental/" "evaluate.clj" "core.clj" "args.clj" "../" "./")
+
+ ("/Users/helmuth/Dropbox/Clojure/Clojush/" (22840 18956 0 0) "test/" "target/" "src/" "scripts/" "run-fly" "resources/" "README.md" "project.clj" "old-version-history.txt" "myruns" "LICENSE" "fly_launcher.py" "Dockerfile" "CONTRIBUTING.md" "bin/" ".travis.yml" ".settings/" ".project" ".lein-repl-history" ".gitignore" ".gitattributes" ".git/" ".DS_Store" ".dockerignore" ".classpath" "../" "./")
+
+ ("/Users/helmuth/emacsd-backup/" (22839 23176 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "idlwave/" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/helmuth/Dropbox/Clojure/Clojush/src/" (22226 24418 0 0) "clojush/" ".DS_Store" "../" "./")
+
+ ("/Users/helmuth/Dropbox/Clojure/" (22835 324 0 0) "TreeGPFiniteAlgebras/" "simplification-scraping/" "simplification-experiments/" "rpp/" "rajtest/" "raj-test/" "Rainwave/" "project-euler/" "ProgramSynthesisBenchmarkDataCSV/" "Program-Synthesis-Benchmark-Data-Server/" "pld-2016-grading/" "learning-cider/" "cs253/" "Clojush/" "clojinc/" ".metadata/" ".DS_Store" "../" "./")
+
+ ("/Users/helmuth/Dropbox/" (22840 9577 0 0) "zzMigration/" "WLU/" "Video Games/" "UMass/" "Transfer/" "tomsgitconfig" "Tom and Fiona Transfer/" "test/" "Screenshots/" "Research/" "Rainwave Music Managing/" "Rainwave/" "Public/" "Popham Picture Sharing/" "Password Keeper.xls" "Icon
+" "Houses/" "Helmuth Pictures/" "Hamilton/" "Florida Picture Sharing/" "Fiona/" "Curling Strategy/" "Clojure/" "Camera Uploads/" "Board Games/" "Benjamin Picture Sharing/" "AminHonorThesis/" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/helmuth/" (22840 8656 0 0) "src/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "iCloud Drive (Archive)/" "emacsd-backup2/" "emacsd-backup/" "eclipse/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Box Sync/" "bin/" "Applications/" "anaconda/" ".zshrc" ".zlogin" ".Trash/" ".tooling/" ".subversion/" ".starcluster/" ".ssh/" ".sdkman/" ".scala_history" ".rvm/" ".rstudio-desktop/" ".Rhistory" ".python_history" ".python-eggs/" ".putty/" ".profile" ".p2/" ".oracle_jre_usage/" ".network_backups/" ".m2/" ".local/" ".lesshst" ".lein/" ".julia_history" ".irb-history" ".ipython/" ".idlerc/" ".groovy/" ".gitconfig" ".git-completion.bash" ".ghc/" ".gem/" ".emacs.d/" ".emacs-backups/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".continuum/" ".config/" ".CFUserTextEncoding" ".cache/" ".boto" ".bashrc" ".bash_sessions/" ".bash_profile~" ".bash_profile-anaconda.bak" ".bash_profile" ".bash_history" ".aws/" ".anaconda/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,19 @@
+
+;; ----- smex-history -----
+(
+ package-install
+ mark-paragraph
+ package-list-packages
+ cd
+ 5x5
+ arp
+ dbx
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 1)
+ (cider-eval-region . 2)
+ (mark-paragraph . 1)
+ (package-install . 3)
+)
