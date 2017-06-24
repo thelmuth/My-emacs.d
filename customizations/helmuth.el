@@ -30,6 +30,15 @@
 ; Make all yes/no questions y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+; RET does newline-and-indent
+(add-hook 'clojure-mode-hook '(lambda ()
+  (local-set-key (kbd "RET") 'newline-and-indent)))
+
+; Smooth scrolling
+(require 'smooth-scroll)
+(smooth-scroll-mode 1)
+(setq smooth-scroll/vscroll-step-size 5)
+
 ; For Haskell mode
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)

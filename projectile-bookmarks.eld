@@ -1,1 +1,1 @@
-("~/emacsd-backup/" "~/Dropbox/test/" "~/Dropbox/Clojure/Clojush/")
+("~/Dropbox/Clojure/Clojush/" "~/.emacs.d/" "~/emacsd-backup/" "~/Dropbox/test/")

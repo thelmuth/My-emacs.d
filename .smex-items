@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ version
+ list-buffers
+ paredit-mode
  package-install
  mark-paragraph
  package-list-packages
  cd
- 5x5
- arp
- dbx
 )
 
 ;; ----- smex-data -----
@@ -16,4 +16,7 @@
  (cider-eval-region . 2)
  (mark-paragraph . 1)
  (package-install . 3)
+ (paredit-mode . 2)
+ (list-buffers . 1)
+ (version . 1)
 )

@@ -9,6 +9,10 @@
 ;; Rainbow parens
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
+;; Paredit hooks for square and curly braces
+(add-hook 'clojure-mode-hook '(lambda () (define-key clojure-mode-map "\M-[" 'paredit-wrap-square)))
+(add-hook 'clojure-mode-hook '(lambda () (define-key clojure-mode-map "\M-{" 'paredit-wrap-curly)))
+
 ;;;;
 ;; Clojure
 ;;;;
