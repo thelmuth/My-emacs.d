@@ -19,6 +19,9 @@
 ; Adds C-c w as command to toggle font coloring
 (global-set-key (kbd "C-c w") 'global-font-lock-mode)
 
+; Adds C-M-y as delete-indentation
+(global-set-key (kbd "C-M-y") 'delete-indentation)
+
 ; Turns off emacs toolbar in GUI mode
 (if window-system
     (tool-bar-mode -1))
