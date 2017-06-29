@@ -22,6 +22,10 @@
 ; Adds C-M-y as delete-indentation
 (global-set-key (kbd "C-M-y") 'delete-indentation)
 
+; Swap C-o (insert newline) and C-x o (switch to other window)
+(global-set-key (kbd "C-o") 'other-window)
+(global-set-key (kbd "C-x o") 'open-line)
+
 ; Turns off emacs toolbar in GUI mode
 (if window-system
     (tool-bar-mode -1))
