@@ -26,6 +26,10 @@
 (global-set-key (kbd "C-o") 'other-window)
 (global-set-key (kbd "C-x o") 'open-line)
 
+; Make navigation easier
+(global-set-key (kbd "C-,") 'paredit-backward)
+(global-set-key (kbd "C-.") 'paredit-forward)
+
 ; Turns off emacs toolbar in GUI mode
 (if window-system
     (tool-bar-mode -1))
