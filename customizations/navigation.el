@@ -57,5 +57,5 @@
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 
-;; projectile everywhere!
+;; projectile allows for easy changing between files in a project
 (projectile-global-mode)
