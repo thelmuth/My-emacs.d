@@ -2,3 +2,8 @@
 cider-history
 ido.last
 projectile-bookmarks.eld
+.smex-items
+network-security.data
+
+auto-save-list/
+elpa/
