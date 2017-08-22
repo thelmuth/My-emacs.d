@@ -1,11 +1,14 @@
+;; Split window vertically
+(setq split-width-threshold 1)
+
+;; Don't require newline
+(setq require-final-newline nil)
+
 ;; save backup files to same location
 (setq backup-directory-alist `(("." . "~/.emacs-backups")))
 
 ;; make sure emacs makes backups by copying
 (setq backup-by-copying t)
-
-;; Don't require newline
-(setq require-final-newline nil)
 
 ;; more backups
 (setq delete-old-versions t
@@ -46,9 +49,9 @@
   (local-set-key (kbd "RET") 'newline-and-indent)))
 
 ; Smooth scrolling
-(require 'smooth-scroll)
-(smooth-scroll-mode 1)
-(setq smooth-scroll/vscroll-step-size 5)
+;; (require 'smooth-scroll)
+;; (smooth-scroll-mode 1)
+;; (setq smooth-scroll/vscroll-step-size 5)
 
 ; For Haskell mode
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
