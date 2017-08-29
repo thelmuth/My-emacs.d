@@ -4,8 +4,8 @@
 
 ;; Define package repositories
 (require 'package)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;(add-to-list 'package-archives
+;	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
 	     '("tromey" . "http://tromey.com/elpa/") t)
 ;;(add-to-list 'package-archives
@@ -14,14 +14,30 @@
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
+; list the packages you want
+(setq package-list '(cider company ido-ubiquitous paredit projectile rainbow-delimiters smex monokai-theme))
 
+; Avoid prompt about coding systems
+(prefer-coding-system 'utf-8)
+
+; activate all the packages (in particular autoloads)   
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
+
 (package-initialize)
 
-(setenv "PATH" (concat (getenv "PATH") ":/Users/helmuth/bin"))
-(setq exec-path (append exec-path '("/Users/helmuth/bin")))
+; fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
+
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+(setenv "PATH" (concat (getenv "PATH") ":/Users/thelmuth/bin"))
+(setq exec-path (append exec-path '("/Users/thelmuth/bin")))
 
 ;; Define he following variables to remove the compile-log warnings
 ;; when defining ido-ubiquitous
