@@ -8,7 +8,7 @@
 ;(menu-bar-mode -1)
 
 ;; Show line numbers
-(global-linum-mode)
+;(global-linum-mode)
 
 ;; You can uncomment this to remove the graphical toolbar at the top. After
 ;; awhile, you won't need the toolbar.
@@ -39,8 +39,8 @@
 ;;  (setq initial-frame-alist '((top . 0) (left . 0) (width . 170) (height . 45)))
 
 ;; Fullscreen mode
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+;(custom-set-variables
+; '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
