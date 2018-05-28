@@ -26,7 +26,9 @@
 (global-set-key (kbd "C-M-y") 'delete-indentation)
 
 ; Swap C-o (insert newline) and C-x o (switch to other window)
+; Also allow C-tab for switching window
 (global-set-key (kbd "C-o") 'other-window)
+(global-set-key (kbd "<C-tab>") 'other-window)
 (global-set-key (kbd "C-x o") 'open-line)
 
 ; Make navigation easier
@@ -48,6 +50,24 @@
 (add-hook 'clojure-mode-hook '(lambda ()
   (local-set-key (kbd "RET") 'newline-and-indent)))
 
+; These allow you to use C-w and M-w to kill and copy the current line, without being at beginning
+(defun slick-cut (beg end)
+  (interactive
+   (if mark-active
+       (list (region-beginning) (region-end))
+     (list (line-beginning-position) (line-beginning-position 2)))))
+
+(advice-add 'kill-region :before #'slick-cut)
+
+(defun slick-copy (beg end)
+  (interactive
+   (if mark-active
+       (list (region-beginning) (region-end))
+     (message "Copied line")
+     (list (line-beginning-position) (line-beginning-position 2)))))
+
+(advice-add 'kill-ring-save :before #'slick-copy)
+
 ; Smooth scrolling
 ;; (require 'smooth-scroll)
 ;; (smooth-scroll-mode 1)
@@ -58,3 +78,5 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+(add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))

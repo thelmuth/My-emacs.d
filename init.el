@@ -15,7 +15,7 @@
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
 ; list the packages you want
-(setq package-list '(cider company ido-ubiquitous paredit projectile rainbow-delimiters smex monokai-theme))
+(setq package-list '(cider company ido-completing-read+ paredit projectile rainbow-delimiters smex monokai-theme))
 
 ; Avoid prompt about coding systems
 (prefer-coding-system 'utf-8)
@@ -40,7 +40,7 @@
 (setq exec-path (append exec-path '("/Users/thelmuth/bin")))
 
 ;; Define he following variables to remove the compile-log warnings
-;; when defining ido-ubiquitous
+;; when defining ido-completing-read+
 (defvar ido-cur-item nil)
 (defvar ido-default-item nil)
 (defvar ido-cur-list nil)
@@ -66,12 +66,14 @@
 ;; switch buffers, and choose options from the minibuffer.
 (load "navigation.el")
 
-;; Langauage-specific
+;; Clojure Langauage-specific
 (load "setup-clojure.el")
 
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
 
+;; Modes for other languages
+(load "language-modes.el")
 
 
 ;; Download the ELPA archive description if needed.
@@ -84,10 +86,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("93f9654f91d31e9a9ec6ea2fcffcfcab38353a9588673f2b750e591f704cd633" "f5b591870422cd28da334552aae915cdcae3edfcfedb6653a9f42ed84bbec69f" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (paredit rainbow-delimiters company projectile smex ido-ubiquitous cider))))
+    (haskell-mode solarized-theme paredit rainbow-delimiters company projectile smex ido-completing-read+ cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
