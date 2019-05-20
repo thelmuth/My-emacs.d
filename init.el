@@ -92,7 +92,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (haskell-mode solarized-theme paredit rainbow-delimiters company projectile smex ido-completing-read+ cider))))
+    (smooth-scroll magit haskell-mode solarized-theme paredit rainbow-delimiters company projectile smex ido-completing-read+ cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
