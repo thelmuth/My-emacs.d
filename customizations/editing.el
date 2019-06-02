@@ -68,3 +68,6 @@
     (quit nil)))
 
 (setq electric-indent-mode nil)
+
+;; Enables changing font size in all buffers with C-M-= and C-M--
+(default-text-scale-mode)

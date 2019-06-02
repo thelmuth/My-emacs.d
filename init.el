@@ -15,7 +15,8 @@
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 
 ; list the packages you want
-(setq package-list '(cider company ido-completing-read+ paredit projectile rainbow-delimiters smex monokai-theme))
+(setq package-list '(cider company ido-completing-read+ paredit projectile rainbow-delimiters smex monokai-theme			   default-text-scale ; Allows you to change the font size in all buffers.
+			   ))
 
 ; Avoid prompt about coding systems
 (prefer-coding-system 'utf-8)
