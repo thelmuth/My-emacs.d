@@ -69,6 +69,17 @@
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
+;; Refresh Cider with C-c C-r
+;; See:
+;;  - http://blog.jenkster.com/2013/12/a-cider-excursion.html
+;;  - https://github.com/clojure/tools.namespace
+;;  - http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded
+(defun cider-namespace-refresh ()
+  (interactive)
+  (cider-interactive-eval
+   "(require 'clojure.tools.namespace.repl)
+  (clojure.tools.namespace.repl/refresh)"))
+(add-hook 'clojure-mode-hook '(lambda () (define-key clojure-mode-map (kbd "C-c C-r") 'cider-namespace-refresh)))
 
 ;; key bindings
 ;; these help me out with the way I usually develop web apps

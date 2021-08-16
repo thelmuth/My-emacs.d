@@ -76,3 +76,6 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+;; always show column number 
+(setq column-number-mode t)
